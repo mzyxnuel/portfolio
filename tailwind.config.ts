@@ -8,6 +8,8 @@ const config: Config = {
     colors: {
       snow: "#FFFFE3",
       shadow: "#323228",
+      ghost: "#0E100F",
+      sky: "#18A0FB"
     },
     borderWidth: {
       xs: "0.2px",
