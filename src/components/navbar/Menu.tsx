@@ -1,4 +1,4 @@
-import { links } from "@/source";
+import { Links } from "@/source";
 import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 import { FaRegAddressCard } from "react-icons/fa";
@@ -29,7 +29,7 @@ const Menu = ({ isVisible }: Props) => {
 			exit={{ opacity: 0, transition: { duration: 0.5 } }}
 		>
 			<div className="bg-ghost w-full">
-				{links.map(({ name, href }) => (
+				{Links.map(({ name, href }) => (
 					<a href={href} key={name}>
 						<motion.div
 							className="flex border-shadow hover:border-sky border-xs items-center text-lg m-4 rounded-md h-16"

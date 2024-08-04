@@ -9,7 +9,11 @@ const config: Config = {
       snow: "#FFFFE3",
       shadow: "#323228",
       ghost: "#0E100F",
-      sky: "#18A0FB"
+      sky: "#18A0FB",
+      watermelon: "#37C713",
+      beetles: "#A374FF",
+      banana: "#FFD074",
+      ocean: "#17F1D1"
     },
     borderWidth: {
       xs: "0.2px",
