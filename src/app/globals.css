@@ -6,13 +6,3 @@ body {
   color: rgb(255, 255, 255);
   background: rgb(14, 16, 15);
 }
-
-@layer base {
-  @font-face {
-    font-family: 'HankenGrotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/HankenGrotesk.woff2) format('woff2');
-  }
-}
