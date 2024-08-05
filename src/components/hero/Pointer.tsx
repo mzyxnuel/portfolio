@@ -18,7 +18,7 @@ const Pointer = ({ text, accent }: Props) => {
 			setPosition({ x, y });
 		};
 
-		const interval = setInterval(movePointer, 3000);
+		const interval = setInterval(movePointer, 1500);
 		return () => clearInterval(interval);
 	}, []);
 
@@ -38,8 +38,8 @@ const Pointer = ({ text, accent }: Props) => {
 	return (
 		<motion.div
 			animate={{ x: position.x, y: position.y }}
-			transition={{ duration: 2, ease: "easeInOut" }}
-			className="flex absolute items-center"
+			transition={{ duration: 1, ease: "easeInOut" }}
+			className="flex absolute items-center pl-10 md:pt-5 lg:pt-10"
 		>
 			<LuMousePointer2 className="text-lg mr-2" />
 			<div className="text-sm md:text-md lg:text-lg">
