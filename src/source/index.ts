@@ -13,3 +13,5 @@ export const Links: Link[] = [
 	{ name: "About", href: "/#about" },
 	{ name: "Projects", href: "/#projects" },
 ];
+
+export const ContactLink = "mailto:sossai-m@proton.me";
