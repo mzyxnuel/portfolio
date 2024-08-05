@@ -17,4 +17,10 @@ export const Links: Link[] = [
 	{ name: "Projects", href: "/#projects" },
 ];
 
+export const SocialLinks: Link[] = [
+	{ name: "github", href: "https://github.com/mzyxnuel" },
+	{ name: "linkedin", href: "" },
+	{ name: "wakatime", href: "https://wakatime.com/@mzyxnuel" },
+];
+
 export const ContactLink = "mailto:sossai-m@proton.me";

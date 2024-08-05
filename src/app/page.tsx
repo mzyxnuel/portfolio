@@ -1,4 +1,4 @@
-import { Hero, NavBar } from "@/components";
+import { Hero, NavBar, SocialBar } from "@/components";
 
 export default function main() {
 	return (
@@ -7,6 +7,7 @@ export default function main() {
 				<NavBar />
 			</div>
 			<Hero />
+			<SocialBar />
 		</main>
 	);
 }
