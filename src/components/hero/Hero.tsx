@@ -36,7 +36,7 @@ const Hero = () => {
 					</h1>
 				</div>
 			</div>
-			<div className="visible md:invisible">
+			<div className="sm:hidden">
 				<Pointer text={SecondPointer} accent="lake" />
 			</div>
 			<div className="flex text-[10px] items-center justify-center gap-2 pr-6 sm:ml-10">
@@ -69,7 +69,7 @@ const Hero = () => {
 				<h1 className="hidden sm:inline-block sm:text-xs md:text-sm lg:text-base">
 					// {PrimaryInfo} <br />
 					{SecondaryInfo}
-					<div className="invisible md:visible">
+					<div className="hidden sm:inline-block">
 						<Pointer text={SecondPointer} accent="lake" />
 					</div>
 				</h1>
@@ -82,7 +82,7 @@ const Hero = () => {
 				<h1 className="pt-2 font-medium leading-5 text-center text-md sm:text-xl sm:pt-4 md:text-2xl lg:text-3xl">
 					I create a digital experience that borders on <br />
 					<span className="text-beetles">efficiency</span>,{" "}
-					<span className="text-banana">aesthetics</span> and{" "}
+					<span className="text-banana">aesthetic</span> and{" "}
 					<span className="text-ocean">functionality</span>.
 				</h1>
 			</div>
