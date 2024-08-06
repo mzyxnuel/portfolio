@@ -15,9 +15,8 @@ import Pointer from "./Pointer";
 
 const Hero = () => {
 	return (
-		<div className="py-36 my-auto md:py-56 lg:py-24">
+		<div className="py-14 my-auto">
 			<div className="flex items-center justify-center">
-				{/* TODO */}
 				<div className="flex items-center justify-center pt-1 rounded-full w-12 h-12 bg-snow lg:w-16 lg:h-16">
 					{/* Memoji */}
 					<Image
@@ -52,7 +51,7 @@ const Hero = () => {
 					{Place}
 				</h1>
 			</div>
-			<div className=" flex text-[10px] items-center justify-center gap-4">
+			<div className=" flex items-center justify-center gap-4">
 				<h1 className="text-5xl font-semibold text-banana md:text-6xl lg:text-8xl">
 					EXPERIENCE
 				</h1>

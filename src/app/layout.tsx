@@ -6,7 +6,18 @@ export const metadata: Metadata = {
 	title: "mzyxnuel",
 	description: "manuel's personal website",
 	category: "personal website portfolio",
-	keywords: ["web developer", "software engineer", "portfolio", "personal website", "backend developer", "frontend developer", "sossai", "manuel", "sossai manuel", "mzyxnuel"],
+	keywords: [
+		"web developer",
+		"software engineer",
+		"portfolio",
+		"personal website",
+		"backend developer",
+		"frontend developer",
+		"sossai",
+		"manuel",
+		"sossai manuel",
+		"mzyxnuel",
+	],
 };
 
 const hanken = Hanken_Grotesk({
@@ -20,7 +31,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={hanken.className}>
-			<body>{children}</body>
+			<body className="text-snow bg-ghost select-none overflow-x-hidden">
+				{children}
+			</body>
 		</html>
 	);
 }
