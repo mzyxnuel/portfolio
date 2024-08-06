@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Scrollbar */
+:root {
+   --ghost: #0E100F;
+   --beetles: #A374FF;
+}
+
+* {
+   scrollbar-width: thin;
+   scrollbar-color: var(--beetles) var(--ghost);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+   width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+   background: var(--ghost);
+   border-radius: full;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: var(--beetles);
+   border-radius: 50;
+   border: 3px solid var(--ghost);
+}
