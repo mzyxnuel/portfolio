@@ -1,23 +1,17 @@
 "use client";
 import { ContactLink, SocialLinks } from "@/source";
+import type { Link } from "@/types";
 import { motion } from "framer-motion";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { SiWakatime } from "react-icons/si";
 
 const SocialBar = () => {
-	function switchIcon(name: string) {
-		switch (name) {
-			case "github":
-				return <IoLogoGithub />;
-
-			case "linkedin":
-				return <IoLogoLinkedin />;
-
-			case "wakatime":
-				return <SiWakatime />;
-		}
-	}
+	const icons: { [key: string]: JSX.Element } = {
+		github: <IoLogoGithub />,
+		linkedin: <IoLogoLinkedin />,
+		wakatime: <SiWakatime />,
+	};
 
 	return (
 		<nav className="w-full h-16 border-t-xs border-t-shadow flex items-center justify-between">
@@ -27,7 +21,7 @@ const SocialBar = () => {
 			</div>
 
 			<div className="border-xs border-shadow rounded-full flex justify-center items-center gap-2 p-1 sm:ml-32">
-				{SocialLinks.map((link) => (
+				{SocialLinks.map((link: Link) => (
 					<motion.a
 						whileHover={{
 							y: -3,
@@ -37,7 +31,7 @@ const SocialBar = () => {
 						href={link.href}
 						className="flex items-center text-3xl p-1 bg-snow rounded-full text-ghost"
 					>
-						{switchIcon(link.name)}
+						{icons[link.name]}
 					</motion.a>
 				))}
 			</div>

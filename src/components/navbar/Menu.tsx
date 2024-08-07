@@ -10,16 +10,11 @@ type Props = {
 };
 
 const Menu = ({ isVisible }: Props) => {
-	function iconSwitch(name: string): ReactNode {
-		switch (name) {
-			case "Home":
-				return <RiHome2Line />;
-			case "About":
-				return <FaRegAddressCard />;
-			case "Projects":
-				return <MdOutlineWorkOutline />;
-		}
-	}
+	const links: { [key: string]: JSX.Element } = {
+		Home: <RiHome2Line />,
+		About: <FaRegAddressCard />,
+		Projects: <MdOutlineWorkOutline />,
+	};
 
 	return (
 		<motion.div
@@ -42,7 +37,7 @@ const Menu = ({ isVisible }: Props) => {
 							}}
 						>
 							<div className="ml-4 flex-grow">{name}</div>
-							<div className="mr-4 text-xl">{iconSwitch(name)}</div>
+							<div className="mr-4 text-xl">{links[name]}</div>
 						</motion.div>
 					</a>
 				))}
