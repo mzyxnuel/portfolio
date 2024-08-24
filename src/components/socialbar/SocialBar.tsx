@@ -4,13 +4,14 @@ import type { Link } from "@/types";
 import { motion } from "framer-motion";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import { SiWakatime } from "react-icons/si";
+import { SiSpotify, SiWakatime } from "react-icons/si";
 
 const SocialBar = () => {
 	const icons: { [key: string]: JSX.Element } = {
 		github: <IoLogoGithub />,
 		linkedin: <IoLogoLinkedin />,
 		wakatime: <SiWakatime />,
+		spotify: <SiSpotify />,
 	};
 
 	return (

@@ -21,6 +21,10 @@ export const SocialLinks: Link[] = [
 	{ name: "github", href: "https://github.com/mzyxnuel" },
 	{ name: "linkedin", href: "" },
 	{ name: "wakatime", href: "https://wakatime.com/@mzyxnuel" },
+	{
+		name: "spotify",
+		href: "https://open.spotify.com/user/314izk2pxjhih3ykyu43lzudxjua?si=57697de090804d2f",
+	},
 ];
 
 export const ContactLink = "mailto:sossai-m@proton.me";
