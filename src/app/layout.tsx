@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -31,6 +33,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={hanken.className}>
+			<Analytics />
+			<SpeedInsights />
 			<body className="text-snow bg-ghost select-none overflow-x-hidden">
 				{children}
 			</body>
