@@ -2,18 +2,9 @@
 import { ContactLink, SocialLinks } from "@/source";
 import type { Link } from "@/types";
 import { motion } from "framer-motion";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import { SiSpotify, SiWakatime } from "react-icons/si";
 
 const SocialBar = () => {
-	const icons: { [key: string]: JSX.Element } = {
-		github: <IoLogoGithub />,
-		linkedin: <IoLogoLinkedin />,
-		wakatime: <SiWakatime />,
-		spotify: <SiSpotify />,
-	};
-
 	return (
 		<nav className="w-full h-16 border-t-xs border-t-shadow flex items-center justify-between">
 			<div className="text-xs ml-4">
@@ -28,11 +19,11 @@ const SocialBar = () => {
 							y: -3,
 						}}
 						transition={{ duration: 0.2 }}
-						key={link.name}
 						href={link.href}
+						key={link.name}
 						className="flex items-center text-3xl p-1 bg-snow rounded-full text-ghost"
 					>
-						{icons[link.name]}
+						{link.icon && <link.icon />}
 					</motion.a>
 				))}
 			</div>
