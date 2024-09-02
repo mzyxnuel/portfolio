@@ -26,8 +26,9 @@ const NavBar = () => {
 						<div className="text-lg pr-3">mzyxnuel</div>
 					</div>
 				</a>
-
+				
 				{/* Menu */}
+				{/* 
 				<motion.div
 					onClick={toggleVisibility}
 					animate={isVisible ? "closed" : "opened"}
@@ -45,9 +46,10 @@ const NavBar = () => {
 					className="absolute top-5 right-4"
 				>
 					<IoClose className="text-2xl" />
-				</motion.div>
+				</motion.div> 
+				*/}
 			</nav>
-			{isVisible && <Menu isVisible={isVisible} />}
+			{/* {isVisible && <Menu isVisible={isVisible} />} */}
 		</>
 	);
 };
