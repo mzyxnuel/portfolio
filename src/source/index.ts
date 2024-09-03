@@ -42,7 +42,7 @@ export const SocialLinks: Link[] = [
 	},
 	{
 		name: "linkedin",
-		href: "",
+		href: "https://www.linkedin.com/in/sossai-manuel",
 		icon: IoLogoLinkedin,
 	},
 	{
