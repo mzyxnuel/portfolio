@@ -26,7 +26,7 @@ const NavBar = () => {
 						<div className="text-lg pr-3">mzyxnuel</div>
 					</div>
 				</a>
-				
+
 				{/* Menu */}
 				{/* 
 				<motion.div
