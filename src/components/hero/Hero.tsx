@@ -27,7 +27,7 @@ const Hero = () => {
 						src={ImagePath}
 					/>
 				</div>
-				<div className="p-2 pr-4 border rounded-full border-bline lg:py-4">
+				<div className="ml-2">
 					{/* Hero */}
 					<h1 className="text-md sm:text-xl border-xs border-shadow rounded-full py-2 px-3">
 						Hello, I'm Manuel
@@ -77,9 +77,9 @@ const Hero = () => {
 					{SecondaryJob}.
 				</h1>
 			</div>
-			<div className="pt-2">
-				<h1 className="pt-2 font-medium leading-5 text-center text-md sm:text-xl sm:pt-4 md:text-2xl lg:text-3xl">
-					I create a digital experience that borders on <br />
+			<div className="pt-4">
+				<h1 className="font-medium text-center text-md sm:text-xl sm:pt-4 md:text-2xl lg:text-3xl leading-5">
+					<span className="mb-1 sm:mb-4 block">I create a digital experience that borders on</span>
 					<span className="text-beetles">efficiency</span>,{" "}
 					<span className="text-banana">aesthetic</span> and{" "}
 					<span className="text-ocean">functionality</span>.

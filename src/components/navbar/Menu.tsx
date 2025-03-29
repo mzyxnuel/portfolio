@@ -26,7 +26,7 @@ const Menu = ({ isVisible }: Props) => {
 								damping: 20,
 							}}
 						>
-							<div className="ml-4 flex-grow">{link.name}</div>
+							<div className="ml-4 grow">{link.name}</div>
 							{link.icon && <link.icon className="mr-4 text-xl" />}
 						</motion.div>
 					</a>
