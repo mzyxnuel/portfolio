@@ -1,6 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-*: initial;
+  --color-snow: #ffffe3;
+  --color-shadow: #323228;
+  --color-ghost: #0e100f;
+  --color-sky: #18a0fb;
+  --color-watermelon: #37c713;
+  --color-onion: #907cff;
+  --color-pig: #ee46d3;
+  --color-lake: #18a0fb;
+  --color-beetles: #a374ff;
+  --color-banana: #ffd074;
+  --color-ocean: #17f1d1;
+
+  --border-width-*: initial;
+  --border-width-xs: 0.2px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 /* Scrollbar */
 :root {
