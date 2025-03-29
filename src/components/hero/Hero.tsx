@@ -79,7 +79,9 @@ const Hero = () => {
 			</div>
 			<div className="pt-4">
 				<h1 className="font-medium text-center text-md sm:text-xl sm:pt-4 md:text-2xl lg:text-3xl leading-5">
-					<span className="mb-1 sm:mb-4 block">I create a digital experience that borders on</span>
+					<span className="mb-1 sm:mb-4 block">
+						I create a digital experience that borders on
+					</span>
 					<span className="text-beetles">efficiency</span>,{" "}
 					<span className="text-banana">aesthetic</span> and{" "}
 					<span className="text-ocean">functionality</span>.

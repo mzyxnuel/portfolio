@@ -26,22 +26,22 @@ const Pointer = ({ text, accent }: Props) => {
 	const generateRandomPosition = useCallback(() => {
 		const maxX = 70;
 		const maxY = 70;
-	  
+
 		return {
-		  x: Math.random() * maxX * (Math.random() > 0.5 ? 1 : -1),
-		  y: Math.random() * maxY * (Math.random() > 0.5 ? 1 : -1),
+			x: Math.random() * maxX * (Math.random() > 0.5 ? 1 : -1),
+			y: Math.random() * maxY * (Math.random() > 0.5 ? 1 : -1),
 		};
-	  }, []);
-	  
-	  useEffect(() => {
+	}, []);
+
+	useEffect(() => {
 		setPosition(generateRandomPosition());
-	  
+
 		const intervalId = setInterval(() => {
-		  setPosition(generateRandomPosition());
+			setPosition(generateRandomPosition());
 		}, 3000);
-	  
+
 		return () => clearInterval(intervalId);
-	  }, [generateRandomPosition]);
+	}, [generateRandomPosition]);
 
 	return (
 		<motion.div
