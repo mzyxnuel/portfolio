@@ -5,3 +5,16 @@ export type Link = {
 	href: string;
 	icon?: IconType;
 };
+
+export type Skill = {
+	name: string;
+	icon: IconType;
+	color: string;
+};
+
+export type Project = {
+	name: string;
+	description: string;
+	tags: string[];
+	href: string;
+};
